@@ -426,7 +426,7 @@ def main():
     info()
     sort.clear()
     sort.logo()
-    print("[b]    [red1][A] [chartreuse1]File Clone [blue][[green]B[red1]D[blue]-[orange1]I[white]N[bright_green]D[blue]]"    
+    print("[b]    [red1][A] [chartreuse1]File Clone [blue][[green]B[red1]D[blue]-[orange1]I[white]N[bright_green]D[blue]]")   
     print("[b]    [red1][B] [spring_green2]Old Uid Clone")
     print("[b]    [red1][C] [spring_green1]Random (more..2)")    
     print(sort.line())
