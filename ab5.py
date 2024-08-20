@@ -452,42 +452,42 @@ def main():
         time.sleep(2)
         main()
         
-def paiduser():
-    uuid = str(os.geteuid())
-    os.system("clear")
-    print(sort.logo())
-    name = input("      Your Name : ")
-    Masum_Ahmed=(name + '//1x6b7b5c%s85b8n9nfdi%s'%(uuid,uuid))
+##def paiduser():
+    ##uuid = str(os.geteuid())
+    ##os.system("clear")
+   ## print(sort.logo())
+   ## name = input("      Your Name : ")
+   ## Masum_Ahmed=(name + '//1x6b7b5c%s85b8n9nfdi%s'%(uuid,uuid))
  #   print(sort.logo())
-    DARK=requests.get("https://github.com/bothacker33/Ab/blob/main/Approved%20").text
-    if Masum_Ahmed in DARK:
-        os.system('clear')
-        print(sort.logo())
+    #DARK=requests.get("https://github.com/bothacker33/Ab/blob/main/Approved%20").text
+   # if Masum_Ahmed in DARK:
+        #os.system('clear')
+       # print(sort.logo())
          
-    else:
-        os.system("clear")
-        print(sort.logo())
+    #else:
+    #    os.system("clear")
+       # print(sort.logo())
       #  print("Approvel")
         #time.sleep(1)
        # os.system("clear")
     #    print(sort.logo())
-        print ("")
-        print("[red1]You Need Get Approved First")
-        print("  [deep_pink2]Note : That is Paid because 80% ok id just now login")
-        print ("")
-        print(" 🔆Your Key is Not Approved 🔶")
-        print("")
-        print(" Copy And Send Key To Admin")
-        print ("")
-        print(f" Your Key : "+Masum_Ahmed)
-        print ("")
-        print ("")
+       # print ("")
+     #   print("[red1]You Need Get Approved First")
+       # print("  [deep_pink2]Note : That is Paid because 80% ok id just now login")
+        #print ("")
+        #print(" 🔆Your Key is Not Approved 🔶")
+        #print("")
+      #  print(" Copy And Send Key To Admin")
+        #print ("")
+      #  print(f" Your Key : "+Masum_Ahmed)
+        #print ("")
+       # print ("")
         
        
      
         
-        sys.exit()
-paiduser()      
+       # sys.exit()
+#paiduser()      
 
 def login(uid,meth):
     global oks,loop
