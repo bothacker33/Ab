@@ -10,7 +10,7 @@ from rich import print
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 
-version="v5"
+version="v5" TARIN TMI AMR SATHE KAJ TA THIK KORNI
 
 class sort:
     def line():
